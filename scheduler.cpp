@@ -53,6 +53,12 @@ int scheduleme(float currentTime, int tid, int remaining_time, int tprio) {
 		case FCFS:
 			retTime = fcfs_scheduleme(currentTime, tid, remaining_time, tprio);
 			break;
+		case SRTF:
+			break;
+		case PBS:
+			break;
+		case MLFQ:
+			break;
 		default:
 			break;
 	}
@@ -86,7 +92,7 @@ int fcfs_scheduleme(float currentTime, int tid, int remainingTime, int tprio) {
 	pthread_mutex_unlock(&readyqueue_lock);
 	
 	/* update the time */
-	ready_queue.front().arrival_time = currentTime;
+//	ready_queue.front().arrival_time = currentTime;
 	ready_queue.front().remaining_time = remainingTime;
 	
 	if (remainingTime <= 0) {
@@ -108,6 +114,7 @@ int fcfs_scheduleme(float currentTime, int tid, int remainingTime, int tprio) {
 		return_time = max_current_time;
 	
 	return return_time;
+//	return max_current_time;
 }
 
 bool search_id(int id) {
