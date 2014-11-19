@@ -3,7 +3,7 @@ Evaluation-of-Thread-Scheduler
 
 16:332:566 INTRODUCTION TO PARALLEL AND DISTRIBUTED COMPUTING
 
-This is the first project in 16:332:566 INTRODUCTION TO PARALLEL AND DISTRIBUTED COMPUTING
+This is the first project.
 
 Team Member:
 
